@@ -60,6 +60,7 @@ public class Pintura implements Obra, Comparable<Pintura> {
 	// La ordenación natural se llevará a cabo por el año de creación, de un modo ascendente
 	@Override
 	public int compareTo(Pintura p1) {
-		return (p1.anio - this.anio);
-	}
-}
+
+		return Integer.compare(this.anio, p1.anio); }
+
+		}
